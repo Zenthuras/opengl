@@ -1,4 +1,6 @@
 package model.geometry.objects;
 
-public class Table {
+import model.geometry.topology.Solid;
+
+public class Table extends Solid {
 }

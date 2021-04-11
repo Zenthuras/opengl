@@ -1,15 +1,16 @@
-package model.geometry.objects;
+package model.geometry.topology;
 
 import model.utils.Part;
 
 import java.util.ArrayList;
 import java.util.List;
 
+// Obecné těleso pro všechny topologie
 public abstract class Solid {
-    private List<Point> vertices;
+    private List<Vector3f> vertices;
     private List<Integer> indices;
-    private List<Point> colors;
-    private List<Double> textureCoordinates;
+    private List<Vector3f> colors;
+    private List<Float> textureCoordinates;
     private List<Part> parts;
 
     public Solid() {
@@ -20,11 +21,11 @@ public abstract class Solid {
         this.parts = new ArrayList<>();
     }
 
-    public List<Point> getVertices() {
+    public List<Vector3f> getVertices() {
         return vertices;
     }
 
-    public void setVertices(List<Point> vertices) {
+    public void setVertices(List<Vector3f> vertices) {
         this.vertices = vertices;
     }
 
@@ -36,19 +37,19 @@ public abstract class Solid {
         this.indices = indices;
     }
 
-    public List<Point> getColors() {
+    public List<Vector3f> getColors() {
         return colors;
     }
 
-    public void setColors(List<Point> colors) {
+    public void setColors(List<Vector3f> colors) {
         this.colors = colors;
     }
 
-    public List<Double> getTextureCoordinates() {
+    public List<Float> getTextureCoordinates() {
         return textureCoordinates;
     }
 
-    public void setTextureCoordinates(List<Double> textureCoordinates) {
+    public void setTextureCoordinates(List<Float> textureCoordinates) {
         this.textureCoordinates = textureCoordinates;
     }
 

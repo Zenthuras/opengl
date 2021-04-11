@@ -1,4 +1,6 @@
 package model.geometry.objects;
 
-public class Door {
+import model.geometry.topology.Solid;
+
+public class Door extends Solid {
 }

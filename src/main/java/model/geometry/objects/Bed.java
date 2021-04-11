@@ -1,4 +1,6 @@
 package model.geometry.objects;
 
-public class Bed {
+import model.geometry.topology.Solid;
+
+public class Bed extends Solid {
 }
